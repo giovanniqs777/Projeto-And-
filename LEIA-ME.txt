@@ -1,0 +1,15 @@
+CONTROLE DE REBANHO - GABRIEL BACK
+
+Este é o código-fonte do aplicativo web (PWA) de controle de rebanho leiteiro: cadastro de
+animais, produção, ultrassom, fotos e agenda.
+
+Stack atual: Next.js (deploy na Vercel) + Supabase (banco Postgres e Storage para fotos).
+Este pacote já foi hospedado em Cloudflare Workers (D1/R2/Wrangler/vinext); essa camada foi
+removida do código.
+
+Para rodar/publicar, consulte o README.md (configuração do .env, criação do bucket de fotos,
+aplicação do schema no Supabase e deploy na Vercel).
+
+Os cadastros, históricos e fotos enviados pelos usuários ficam no Supabase (banco e Storage) e
+não estão incluídos neste pacote. Este é uma cópia do código-fonte, não um backup dos dados do
+rebanho.

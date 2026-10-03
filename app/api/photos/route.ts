@@ -1,0 +1,3 @@
+import { safeWrite, routeError } from "@/lib/herd-db";
+import { getPhotoStorage } from "@/lib/storage";
+export async function POST(r:Request){try{safeWrite(r);const f=(await r.formData()).get("file");if(!(f instanceof File)||!['image/jpeg','image/png','image/webp'].includes(f.type)||f.size>5*1024*1024)return Response.json({error:"Use JPG, PNG ou WebP de até 5 MB."},{status:400});const id=crypto.randomUUID();const {error}=await getPhotoStorage().upload(id,await f.arrayBuffer(),{contentType:f.type,upsert:false});if(error)throw error;return Response.json({photo:'/api/photos/'+id});}catch(e){return routeError(e);}}

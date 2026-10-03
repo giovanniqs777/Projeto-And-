@@ -1,0 +1,2 @@
+import { getPhotoStorage } from "@/lib/storage";
+export async function GET(r:Request,{params}:{params:Promise<{id:string}>}){const {id}=await params;if(!/^[a-f0-9-]{36}$/.test(id))return new Response(null,{status:404});try{const {data,error}=await getPhotoStorage().download(id);if(error||!data)return new Response(null,{status:404});return new Response(await data.arrayBuffer(),{headers:{'Content-Type':data.type||'image/jpeg','Cache-Control':'private, max-age=3600','X-Content-Type-Options':'nosniff'}});}catch{return new Response(null,{status:503});}}
