@@ -28,3 +28,9 @@ body{background:#F5F5F5}.panel,.stat,.cowcard{background:#FFF}.productionfields{
 .photoframe{width:100%;min-width:0;display:grid;place-items:center;border:1px solid #E5E5E5;border-radius:10px;background:#F5F5F5;color:#333}.animalphotos{width:280px;align-self:flex-start}.animalphotos .photoframe{width:100%}.cardphotos{width:84px;flex-shrink:0;display:grid;gap:6px}.compactphoto{border-radius:6px}.cowcard>div:last-child{min-width:0;overflow-wrap:anywhere}.historyhead{margin-top:30px;padding-top:24px;border-top:1px solid #E5E5E5}@media(max-width:720px){.animalphotos{width:100%;align-self:stretch}}
 
 .photoeditor{display:grid;gap:12px;min-width:0}.photomodes{display:flex;gap:6px;flex-wrap:wrap}.photomodes button{font-size:14px;padding:9px}.framecontrol{display:grid;gap:14px;padding:6px 0 12px}.framecontrol>span{font-size:14px}.photoeditor .hint{margin:0}.photoeditor [data-slot=slider]{min-height:30px}
+
+.recordactions{display:flex;flex-wrap:wrap;gap:8px;margin-left:auto}.record .recordactions .deletebutton{margin-left:0}
+
+@media(max-width:540px){.navtabs{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))}.navtabs button{width:100%}}
+
+.calfcard{border:1px solid #E5E5E5;border-radius:10px;background:#FFF;min-width:0;display:flex;flex-direction:column}.calfcard .cowcard{border:0;width:100%;flex:1}.calfcard .recordactions{padding:0 18px 16px}
