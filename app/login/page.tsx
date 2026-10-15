@@ -33,7 +33,7 @@ export default function LoginPage() {
       <header className="topbar">
         <div className="brand">
           <div className="mark"><Milk size={24} /></div>
-          <div>Controle de rebanho<small>Gabriel Back</small></div>
+          <div>Controle leitaria</div>
         </div>
         <div className="private"><span>Uso interno</span></div>
       </header>

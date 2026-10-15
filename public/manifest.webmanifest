@@ -1,8 +1,8 @@
 {
   "id": "/",
-  "name": "Controle de rebanho - Gabriel Back",
-  "short_name": "Rebanho Gabriel",
-  "description": "Controle de produção, reprodução e saúde do rebanho de Gabriel Back.",
+  "name": "Controle leitaria",
+  "short_name": "Controle leitaria",
+  "description": "Controle de produção, reprodução e saúde do rebanho.",
   "lang": "pt-BR",
   "start_url": "/",
   "scope": "/",
